@@ -79,6 +79,9 @@ export default {
         deleteContact() {
             this.$emit("delete:contact", this.contactLocal.id);
         },
+        addContact(){
+            this.$emit("create:contact", this.contactLocal);
+        }
     },
 };
 </script>
